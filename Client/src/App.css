@@ -1,0 +1,508 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Login{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  font-weight:bold;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background:#e81535;
+}
+
+.Login .card{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  height: 50vh;
+  padding-inline: 5%;
+border-radius:20px;
+background:white;
+}
+
+.Login .card .logo img{
+  width:300px;
+  transform: translateX(10px);
+  margin-bottom:40px;
+}
+
+.Login .title{
+  margin-bottom:20px;
+}
+.Login .card .lineBreak{
+  width: 65%;
+  height:1px;
+  margin-bottom: 20px;
+  background-color:#db2f4c71;
+}
+.App {
+  text-align: center;
+  align-items: center;
+}
+.AppBody{
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  overflow:auto;
+  background-color: #fafafa;
+}
+.navbar{
+  overflow:hidden;
+  width:100%;
+  position: fixed;
+  height:60px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dfdfdf;
+}
+.navbar .content{
+  width:60%;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.navbar .logo img{
+  height:40px;
+  cursor: pointer;
+
+}
+.navbar .userInfo{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar .userInfo nav{
+    display:flex;
+    justify-content:center;
+    
+}
+.navbar .userInfo nav a{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+ color:black;
+ text-decoration: none;
+ margin-right: 15px;
+}
+.navbar .userInfo nav .activeLink :first-child{
+ display: none;
+}
+.navbar .userInfo nav .inActiveLink :last-child{
+  display: none;
+ }
+.navbar .userInfo nav img{
+width:25px;
+}
+.navbar .userInfo .userdp{
+  display:flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.navbar .userInfo .userdp img{
+  cursor: pointer;
+  height:30px;
+  width:30px;
+  border-radius: 30px;
+  object-fit:cover;
+}
+.navbar .userInfo .username{
+  display:flex;
+  align-items: center;  
+  font-size:20px;
+  font-weight:bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logoutbtn{
+  border-radius:10px;
+  width:80px;
+  height:40px;
+  border: 0;
+  background-color:#e81535;
+  font-weight:bold;
+  color:#fff;
+  cursor: pointer;
+}
+.createQuotePage{
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  align-items: center;
+  height: 100vh;
+  background-color: #fafafa;
+ }
+ .home{
+   padding-top: 60px;
+ }
+.heade{
+  
+  overflow:hidden;
+  display: flex;
+  font-size: 30px;
+  font-weight:bold;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content:center;
+  align-items: center;
+  background-color:#ed2f4b;
+   width: 100%;
+   height: 60px;
+   text-align: center;
+   
+ }
+.createPost{
+  display:flex;
+  justify-content:center;
+  margin-bottom:20px;
+  align-items: center;
+}
+.createQuote{
+  
+  width:540px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding:20px;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.createQuote .header {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+.aqbody{
+  padding-top: 25vh;
+  display: flex;
+  justify-content:center;
+}
+.createQuote .header .userdp img{
+  height:30px;
+  width:30px;
+  border-radius: 30px;
+  object-fit:cover;
+}
+.createQuote .title{
+padding-left: 10px;
+
+font-size: 20px;  
+}
+.createQuote .inputQuote textarea{
+  font-weight: bold;
+  
+  font-size:20px;
+  padding: 10px;
+  width:100%;
+  height:100px;
+  border:0;
+  border-radius:10px;
+  resize: none;
+  background-color: #1b75e400;
+}
+.createQuote .inputQuote textarea:focus{
+  outline: none;
+}
+.createQuote .inputButtons {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items:center;
+  padding-inline: 5px;
+}
+.createQuote .inputButtons .colourSelection{
+  display: flex;
+  align-items: center;
+  
+}
+.createQuote .inputButtons .colourSelection Button{
+ color: white;
+ font-weight: bold;
+  padding:5px;
+  border-radius:10px;
+  border:0;
+  margin-inline: 3px;
+  cursor: pointer;
+  
+}
+.createQuote .inputButtons .post .postButton {
+  width: 80px;
+  height: 30px;
+  border-radius:5px;
+  border:0;
+  cursor: pointer;
+  color: white;
+  font-weight:bold;
+  background-color: #e81535;
+  
+}
+.createQuote .inputButtons .colourSelection .currentColour{
+  height:20px;
+  width:20px;
+  border-radius:20px;
+  margin-right: 5px;
+ 
+  
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input {
+  height: 40px; /* Increased height for better visibility and touch target */
+  width: 300px;
+  padding: 0 15px; /* Added padding to improve visual appearance */
+  border: 1px solid #bcbcbc;
+  border-radius: 20px; /* Increased border-radius for a rounder shape */
+  transition: border-color 0.3s ease; /* Added transition for smoother hover/focus effect */
+}
+
+.search input:focus {
+  outline: none;
+  border-color: #007bff; /* Changed border color on focus for better visibility */
+}
+
+.filter{
+  display: flex;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.filter button{
+  
+
+  color: white;
+ font-weight: bold;
+  padding:5px;
+  padding-inline: 10px;
+  border-radius:10px;
+  border:0;
+  margin-inline: 3px;
+  cursor: pointer;
+}
+.quoteList{
+  display:grid;
+  margin-top: 20px;
+margin-bottom:20px;
+  grid-template-columns:auto auto auto;
+  justify-content:center;
+  column-gap: 20px;
+  row-gap: 50px;
+}
+
+.quote{
+  width:300px;
+  display:flex;
+  flex-direction:column;
+}
+.quote .top{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+  justify-content:space-between;
+  
+}
+.quote .details{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+.quote .top .profilepic img{
+  cursor: pointer;
+  display:flex;
+  align-items: center;
+  height:30px;
+  width:30px;
+  border-radius: 30px;
+  margin-left:5px;
+  margin-right: 10px;
+  object-fit:cover;
+}
+.quote .top .name{
+  cursor: pointer;
+  color:rgb(23, 23, 23);
+  font-weight:bold;
+}
+.quote .top .verified{
+  margin-left: 5px;
+  display:flex;
+  align-items: center;
+}
+.quote .top .remove {
+  cursor: pointer;
+  padding-right: 5px;
+  display:flex;
+  align-items: center;
+}
+.quote .top .verified img{
+  height:23px;
+}
+.quote .top .remove img{
+  height:23px;
+}
+.quote .quotebody{
+  
+  text-align: center;
+  color:white;
+  height:300px;
+  font-size:25px;
+  border-radius: 10px;
+  display:flex;
+  align-items: center;
+  padding-inline:50px;
+  justify-content:center;
+  background-size: cover;
+ font-family: 'Times New Roman', Times, serif;
+cursor:default;
+}
+.quote .quotebody:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height:302px;
+  width:302px;
+}
+.profile{
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+ align-items: center;
+}
+.profileBG{
+
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.profileHead{
+  justify-content: space-around;
+  display:flex;
+  flex-direction:row;
+}
+.profileHead .userDp{
+  margin-right: 15px;
+}
+.profileHead .userDp img{
+  
+  padding: 0;
+  width:100px;
+  height: 100px;
+  border: 3px solid #e81535;
+  border-radius: 50px;
+  background-color:#e81535;
+  object-fit:cover;
+}
+.profileHead .userInfo{
+  justify-content: space-around;
+  display:flex;
+  text-align: left;
+  flex-direction:column;
+}
+
+.profileHead .userInfo .userid{
+  color:gray;
+}
+
+.profileHead .userInfo .userName{
+  font-size: 30px;
+  display: flex;
+}
+.profileHead .userInfo .userName .verified{
+  margin-left: 5px;
+  display:flex;
+  align-items: center;
+}
+.profileHead .userInfo .userName .verified img{
+  height:33px;
+}
+.profile .lineBreak{
+  width: 65%;
+  height:1px;
+  background-color:#db2f4c71;
+}
+@media all and (min-width: 1230px) and (max-width: 1280px) { 
+
+  .quoteList{
+  
+    grid-template-columns:auto auto auto ;
+  }
+}
+
+@media all and (min-width: 960px) and (max-width: 1230px) {
+  .quoteList{
+  
+    grid-template-columns:auto auto auto ;
+  }
+ }
+
+@media all and (min-width: 630px) and (max-width: 960px) { 
+  .quoteList{
+  
+    grid-template-columns:auto auto;
+  }
+  .navbar .content{
+    width:80%;
+   
+  }
+}
+
+@media all and (max-width: 630px) { 
+  .quoteList{
+  
+    grid-template-columns:auto;
+  }
+  .navbar .content{
+    width:95%;
+   
+  }
+  .createQuote{
+    width:350px;
+  }
+  .createQuote .inputButtons {
+    display: flex;
+    flex-direction:column;
+    padding: 0;
+  }
+  .createQuote .inputButtons .post  {
+    width: 100%;
+  }
+  .createQuote .inputButtons .post .postButton {
+    margin-top: 5px;
+    width: 100%;
+    
+  }
+}
+@media all and (max-width: 376px) {
+  .heade{
+    font-size: 20px;
+    height: 40px;
+  }
+  .profileHead .userInfo .userName {
+    font-size: 25px;
+}
+.profileHead .userInfo .userName .verified img {
+  height: 22px;
+}
+.quote .quotebody {
+  height: 250px;
+}
+.quote  {
+  width: 250px;
+}
+.filterText{
+ display: none;
+}
+.Login .card{
+  padding-inline: 0;
+}
+ }

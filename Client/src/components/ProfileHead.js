@@ -5,12 +5,14 @@ function ProfileHead(props) {
   const [user, setUser] = useState("");
   const [postCount, setPostCount] = useState(0);
   useEffect(() => {
-    Axios.get("http://localhost:3001/getUser/" + props.id).then((res) => {
-      setUser(res.data);
-      console.log(res.data);
-    });
+    Axios.get(`${process.env.REACT_APP_LINK}/getUser/` + props.id).then(
+      (res) => {
+        setUser(res.data);
+        console.log(res.data);
+      }
+    );
     Axios.get(
-      "http://localhost:3001/getQuotes/" + props.id + "@gmail.com"
+      `${process.env.REACT_APP_LINK}/getQuotes/` + props.id + "@gmail.com"
     ).then((res) => {
       setPostCount(res.data.length);
       console.log(res.data);

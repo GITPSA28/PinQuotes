@@ -15,12 +15,12 @@ function Home() {
   useEffect(() => {
     var userData = JSON.parse(localStorage.getItem("user"));
     if (userData)
-      Axios.get("http://localhost:3001/getUser/" + userData.username).then(
-        (res) => {
-          setUser(res.data);
-          console.log(res.data);
-        }
-      );
+      Axios.get(
+        `${process.env.REACT_APP_LINK}/getUser/` + userData.username
+      ).then((res) => {
+        setUser(res.data);
+        console.log(res.data);
+      });
   }, []);
   return (
     <div className="App home">

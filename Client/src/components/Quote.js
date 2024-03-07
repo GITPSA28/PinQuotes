@@ -14,9 +14,11 @@ export default function Quote(props) {
     navigate("/profile/" + props.quoteData.email.replace("@gmail.com", ""));
   };
   const deleteQuote = (id) => {
-    Axios.delete("http://localhost:3001/deleteQuote/" + id).then((res) => {
-      alert("deleted");
-    });
+    Axios.delete(`${process.env.REACT_APP_LINK}/deleteQuote/` + id).then(
+      (res) => {
+        alert("deleted");
+      }
+    );
   };
   return (
     <div className="quote">

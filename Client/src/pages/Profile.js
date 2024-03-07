@@ -37,7 +37,11 @@ function Profile(props) {
   function Logout() {
     return (
       <GoogleLogout
-        clientId="637647648307-oe53i7gbpv4he5b8f85o4fh6rfc2brbk.apps.googleusercontent.com"
+        clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID1.concat(
+          "-",
+          process.env.REACT_APP_GOOGLE_CLIENT_ID2,
+          ".apps.googleusercontent.com"
+        )}
         render={(renderProps) => (
           <button
             className="logoutbtn"

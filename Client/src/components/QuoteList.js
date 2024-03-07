@@ -20,13 +20,14 @@ export default function QuoteList(props) {
     setLoading(true);
     console.log(props.id);
     if (!props.id) {
-      Axios.get("http://localhost:3001/getQuotes").then((res) => {
+      Axios.get(`${process.env.REACT_APP_LINK}/getQuotes`).then((res) => {
         setListOfQuotes(res.data);
         setCurrentList(res.data);
         setLoading(false);
       });
     } else {
-      let str = "http://localhost:3001/getQuotes/" + props.id + "@gmail.com";
+      let str =
+        `${process.env.REACT_APP_LINK}/getQuotes/` + props.id + "@gmail.com";
       Axios.get(str).then((res) => {
         setListOfQuotes(res.data);
         setCurrentList(res.data);

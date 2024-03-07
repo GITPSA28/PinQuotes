@@ -8,7 +8,7 @@ function AddQuote(props) {
   const user = props.user;
   const createQuote = () => {
     if (quote) {
-      Axios.post("http://localhost:3001/createQuote", {
+      Axios.post(`${process.env.REACT_APP_LINK}/createQuote`, {
         name: user.name,
         email: user.email,
         dpurl: user.dpUrl,

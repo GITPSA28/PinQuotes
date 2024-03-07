@@ -15,7 +15,7 @@ function Login() {
     console.log(googleUser);
     var profile = googleUser.getBasicProfile();
     axios
-      .post("http://localhost:3001/createUser", {
+      .post(`${process.env.REACT_APP_LINK}/createUser`, {
         name: profile.getName(),
         email: profile.getEmail(),
         dpurl: profile.getImageUrl(),

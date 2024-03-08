@@ -457,6 +457,10 @@ cursor:default;
 }
 
 @media all and (max-width: 630px) { 
+  .heade{
+    font-size: 25px;
+    height: 40px;
+  }
   .quoteList{
   
     grid-template-columns:auto;

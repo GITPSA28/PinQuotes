@@ -3,7 +3,7 @@ import { Navigate, useParams } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import QuoteList from "../components/QuoteList";
 import { LoginContext } from "../contexts/LoginContext";
-import { GoogleLogout } from "react-google-login";
+import { GoogleLogout } from "@leecheuk/react-google-login";
 
 import ProfileHead from "../components/ProfileHead";
 function Profile(props) {

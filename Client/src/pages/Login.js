@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import logo from "../images/pinquoteslogo.png";
 import { useState, useContext } from "react";
-import { GoogleLogin } from "react-google-login";
+import { GoogleLogin } from "@leecheuk/react-google-login";
 import { Navigate, useNavigate } from "react-router-dom";
 import { LoginContext } from "../contexts/LoginContext";
 function Login() {
